@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class ButtonsList {
   static List<Widget> buttonsList() {
     return [
+      TextButton(onPressed: (){}, child: Text('TextButton')),
+      TextButton.icon(onPressed: (){}, icon: Icon(Icons.info), label: Text('TextButton With Icon')),
       ElevatedButton(
         onPressed: () {},
         child: Text('ElevatedButton'),
@@ -17,6 +19,9 @@ class ButtonsList {
                 ButtonsList.resolveButtonShape),
             elevation: MaterialStateProperty.all(5)),
       ),
+      ElevatedButton.icon(
+        onPressed: (){}, 
+        icon: Icon(Icons.send), label: Text('ElevatedButton With Icon')),
     ];
   }
 

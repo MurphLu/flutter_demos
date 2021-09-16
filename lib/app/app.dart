@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demos/app/config/router.dart';
 import 'package:flutter_demos/app/modules/main_app/main_page.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
       ),
       home: MyHomePage(title: 'Home Page'),
+      routes: AppRouter().routes,
     );
   }
 }

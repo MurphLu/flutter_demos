@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         alignment: Alignment(-0.9, 0.0),
                         child: Text(
                           list[index].keys.first,
-                          style: TextStyle(color: Color(0xFFFEDFE1)),
+                          style: TextStyle(color: Color(0xFF64363C ^ 0x00FFFFFF)),
                         ),
                       ),
                     ));
