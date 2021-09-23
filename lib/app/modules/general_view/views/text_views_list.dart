@@ -72,6 +72,11 @@ class TextViewsList {
         '倾斜',
         style: TextStyle(fontStyle: FontStyle.italic),
       ),
+      Text(
+        '最大行数，及超过最大显示数量之后日和显示，\n低价位卡了解到卡拉胶宽带连接撒开了多久就坎德雷瓦接口来等级考试拉家带口拉萨放假看论文安居客端午节安康里的达瓦',
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
+      )
     ];
   }
 }

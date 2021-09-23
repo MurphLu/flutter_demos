@@ -1,7 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demos/app/modules/general_view/views/buttons_list.dart';
-import 'package:flutter_demos/app/modules/general_view/views/text_views_list.dart';
+import 'package:flutter_demos/app/modules/general_view/views/general_views.dart';
 
 class GeneralViewPage extends StatelessWidget {
   GeneralViewPage({Key? key}) : super(key: key);
@@ -17,6 +16,12 @@ class GeneralViewPage extends StatelessWidget {
           slivers: [
             _section(title: '文本', widgets: TextViewsList.textWidgets()),
             _section(title: '按钮', widgets: ButtonsList.buttonsList()),
+            _section(title: '输入框', widgets: InputsList.inputWidgets()),
+            SliverToBoxAdapter(
+              child: Container(
+                child: SizedBox(height: 40,)
+              ),
+            )
           ],
         ),
       ),
