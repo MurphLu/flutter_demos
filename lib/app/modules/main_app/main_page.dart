@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demos/app/modules/animations/animations_page.dart';
+import 'package:flutter_demos/app/modules/animations/views/basic_animation.dart';
 import 'package:flutter_demos/app/modules/forms/forms.dart';
 import 'package:flutter_demos/app/modules/general_view/general_views_page.dart';
 import 'package:flutter_demos/app/utils/navigator_util.dart';
@@ -16,6 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Map<String, WidgetBuilder>> list = [
     {"通用组件": (_) => GeneralViewPage()},
     {"表单": (_) => Forms()},
+    {'动画': (_) => AnimationsPage()},
   ];
 
   @override
