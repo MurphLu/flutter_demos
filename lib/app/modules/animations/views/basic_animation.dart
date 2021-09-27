@@ -42,7 +42,9 @@ class _BasicAnimationState extends State<BasicAnimation>
             left: 10,
             child: ElevatedButton(
                 onPressed: () {
-                  controller.forward(from: 0);
+                  controller
+                      .forward(from: 0)
+                      .whenComplete(() => controller.reverse());
                 },
                 child: Text('action')),
           )
